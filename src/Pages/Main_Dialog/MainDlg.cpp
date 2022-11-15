@@ -39,36 +39,6 @@ CMainDlg::CMainDlg(CWnd* pParent /*=NULL*/): CDialog(CMainDlg::IDD, pParent)
 	
   m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 
-  //получить язык системы 
-  //Текущий язык интерфейса: HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Control\MUI\UILanguages
-  //Chinese (Simplified, China) 	
-  //zh-CN: Microsoft Pinyin - Simple Fast 
-  //(0804:{81D4E9C9-1D3B-41BC-9E6C-4B40BF79E35E}{FA550B04-5AD7-411f-A5AC-CA038EC515D7}) 	
-  //Chinese - (Traditional, Taiwan) 	
-  //zh-TW: Chinese (Traditional) - New Phonetic 
-  //(0404:{B115690A-EA02-48D5-A231-E3578D2FDF80}{B2F9C502-1742-11D4-9790-0080C882687E})  
-  //https://www.autoitscript.com/autoit3/docs/appendix/OSLangCodes.htm
-  //Защита от китайцев
-  /*
-  int lng_id;
-  lng_id = GetSystemDefaultLangID();
-  if(lng_id==0x0804 || lng_id==0x0404 || lng_id==0x0478)
-  {
-	 CString msg;
-	 msg = "App Internal error";
-	 msg += "\r\nCan`t allocation memory";
-	 msg += "\r\nContact the developer for a fix";
-	 msg += "\r\nhttps://en.gradient-sg.com/t962/";
-     AfxMessageBox(_T(msg),  MB_ICONWARNING);
-
-	 msg = "Unhandled exception at 0x00412b23 in: 0xC0000005";
-	 msg += "\r\nAccess violation reading location 0xcccccccc";
-	 AfxMessageBox(_T(msg), MB_ICONSTOP);
-	 
-	 //Закрыть приложение
-	 CDialog::OnCancel();
-  }	*/
-  
   pBTDlg = NULL;
 
   //Allocate memory for objects

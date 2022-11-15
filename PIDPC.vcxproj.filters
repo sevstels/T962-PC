@@ -264,15 +264,6 @@
     <ClCompile Include="src\AnalysisGraph\anls-dlg-settings.cpp">
       <Filter>Analysys\Settings Dialog</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\bt-dongle.cpp">
-      <Filter>LibCPP\BT-Dongles</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\bt-firmware.cpp">
-      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\hex2hcd.cpp">
-      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\btstack_memory.c">
       <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
     </ClCompile>
@@ -284,45 +275,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\utils.c">
       <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\thread_cmd.cpp">
-      <Filter>LibCPP\BT-Dongles\Threads</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\thread_data.cpp">
-      <Filter>LibCPP\BT-Dongles\Threads</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\thread_sync.cpp">
-      <Filter>LibCPP\BT-Dongles\Threads</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\threads.cpp">
-      <Filter>LibCPP\BT-Dongles\Threads</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Parser\parser.cpp">
-      <Filter>LibCPP\BT-Dongles\Parser</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-adapter.cpp">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-ble-ini.cpp">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-connect.cpp">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-devices.cpp">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-send.cpp">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-utils.cpp">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\hci-cmd.cpp">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\sync-le_test.cpp">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci.c">
       <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
@@ -555,6 +507,48 @@
     <ClCompile Include="src\Profiles\profile-file-mc.cpp">
       <Filter>Profile Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\bt-dongle.cpp">
+      <Filter>LibCPP\BT-Dongles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_cmd.cpp">
+      <Filter>LibCPP\BT-Dongles\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_data.cpp">
+      <Filter>LibCPP\BT-Dongles\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_sync.cpp">
+      <Filter>LibCPP\BT-Dongles\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Thread\threads.cpp">
+      <Filter>LibCPP\BT-Dongles\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Parser\parser.cpp">
+      <Filter>LibCPP\BT-Dongles\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-adapter.cpp">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-ble-ini.cpp">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-connect.cpp">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-devices.cpp">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-send.cpp">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-utils.cpp">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\hci-cmd.cpp">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.cpp">
+      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -602,15 +596,6 @@
     <ClInclude Include="src\AnalysisGraph\anls-dlg-settings.h">
       <Filter>Analysys\Settings Dialog</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\bt-dongle.h">
-      <Filter>LibCPP\BT-Dongles</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\BCM20702A0.h">
-      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\bt-firmware.h">
-      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\ant_cmds.h">
       <Filter>LibCPP\BT-Dongles\BT Stack\includes</Filter>
     </ClInclude>
@@ -655,18 +640,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\btstack-config.h">
       <Filter>LibCPP\BT-Dongles\BT Stack</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\threads.h">
-      <Filter>LibCPP\BT-Dongles\Threads</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Parser\parser.h">
-      <Filter>LibCPP\BT-Dongles\Parser</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt.h">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-utils.h">
-      <Filter>LibCPP\BT-Dongles\Functions</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci.h">
       <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
@@ -718,12 +691,6 @@
     </ClInclude>
     <ClInclude Include="src\Pages\ReflowDlg\dlg_reflow.h">
       <Filter>Pages\Reflow Dlg</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\CSR8510A10.h">
-      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\RTL8761A.h">
-      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
     </ClInclude>
     <ClInclude Include="src\DFU\lpc21isp.h">
       <Filter>Firmware Update</Filter>
@@ -784,6 +751,33 @@
     </ClInclude>
     <ClInclude Include="src\Profiles\profile-file.h">
       <Filter>Profile Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\bt-dongle.h">
+      <Filter>LibCPP\BT-Dongles</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\Thread\threads.h">
+      <Filter>LibCPP\BT-Dongles\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\Parser\parser.h">
+      <Filter>LibCPP\BT-Dongles\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\Functions\bt.h">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\Functions\bt-utils.h">
+      <Filter>LibCPP\BT-Dongles\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\BCM20702A0.h">
+      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.h">
+      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\CSR8510A10.h">
+      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\RTL8761A.h">
+      <Filter>LibCPP\BT-Dongles\Firmware</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

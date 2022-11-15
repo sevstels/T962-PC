@@ -563,14 +563,92 @@ int CBTDONGLE::OpenUSB(void)
 //Function 
 //------------------------------------------------------------------------------
 void CBTDONGLE::CloseUSB(void)
-{  
+{
+  //make sure xfers are not active
+  ///if(rx_xfer != NULL) libusb_cancel_transfer(rx_xfer);
+  
   usb_opened = 0;
   dongle_ready = 0;
 
-  //закрыть потоки
-  Threads_Release();
+ /// if(hUSB != NULL)
+  {
+    //флаг закрыть потоки
+	Threads_Release();
+	
+	//Reset dongle to initial state
+    ///libusb_reset_device(hUSB);
+	///libusb_release_interface(hUSB, usb_interface);
+  }
+	
+  ///libusb_close(hUSB);
+  ///libusb_exit(NULL);
+ // hUSB = NULL;
 }
+	  /*
+    //HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\Vid_0403&Pid_6001\FTYJB6P6
+    CString RegPath, DeviceInstanceId, DeviceUniqueID;
+    RegPath = "SYSTEM\\CurrentControlSet\\Enum\\USB\\";
+    
+    //---- Get Vid Pid string
+    ///DeviceInstanceId = "Vid_0403&Pid_6001"; 
+    DeviceInstanceId = msg;
+    length = DeviceInstanceId.GetLength();
+    pos = DeviceInstanceId.Find("Vid_", 0);
+    DeviceInstanceId = DeviceInstanceId.Right(length-pos);
+    length = DeviceInstanceId.GetLength();
+    pos = DeviceInstanceId.Find("\\", 0);
+    
+	//---- Get serial number
+    ///DeviceUniqueID = "FTYJB6P6";
+    DeviceUniqueID = DeviceInstanceId.Right(length-(pos+1));
+    
+	//---- Complete Vid Pid
+    DeviceInstanceId.Delete(pos, length-pos);
+    
+    //Assemble full patch to key
+    RegPath += DeviceInstanceId;
+    RegPath += "\\";
+    RegPath += DeviceUniqueID;
 
+    //RegPath = _T("SYSTEM\\CurrentControlSet\\Enum\\USB\\Vid_0403&Pid_6001\\FTYJB6P6\\");
+    //LPCTSTR pth = _T("SYSTEM\\CurrentControlSet\\Enum\\USB\\Vid_0403&Pid_6001\\FTYJB6P6");
+  
+    CRegKey regkey;
+    long status = regkey.Open(HKEY_LOCAL_MACHINE, RegPath, KEY_READ);
+    if(status == ERROR_SUCCESS)
+     { /*	
+       char buffer[16];
+       const char name[] = "LocationInformation";
+       unsigned long bufSize = sizeof(buffer);
+       memset(buffer, 0, bufSize);
+       
+       //Get adapter name
+       status = regkey.QueryStringValue(name, buffer, &bufSize); 
+       regkey.Close(); */  /*
+	   status = ERROR_SUCCESS;
+       if(status == ERROR_SUCCESS)
+        {   
+          //send info to usb class, if class exist
+          if(pCAN!=NULL)
+           { 
+             //adapter IDs
+             pCAN->USB.HotPlug_serial = DeviceUniqueID;
+           } 
+
+          if(EventType == DBT_DEVICEARRIVAL) 
+           { 
+             if(pCAN!=NULL)
+                result = pCAN->USB.AdapterAttached();
+           }
+          if(EventType == DBT_DEVICEREMOVECOMPLETE)
+           {  
+             if(pCAN!=NULL)
+                result = pCAN->USB.AdapterRemoved(); 
+           }
+        }
+     }
+  }
+  */
 //------------------------------------------------------------------------------
 //Function
 //https://coderoad.ru/11190241/%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8C%D1%82%D0%B5-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD-%D0%BB%D0%B8-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-my-USB
@@ -600,7 +678,6 @@ int CBTDONGLE::CheckDriver(int vid, int pid, long dev_num)
   if(status != ERROR_SUCCESS) return -1; 
 
   //Папка драйвера найдена, Читаем имя первой вложенной папки
-  //Driver folder found, Read the name of the first subfolder
   CString sResult;
   DWORD dwLength = MAX_PATH;
   status = regkey.EnumKey(0, sResult.GetBuffer(MAX_PATH), &dwLength);
@@ -610,11 +687,9 @@ int CBTDONGLE::CheckDriver(int vid, int pid, long dev_num)
   if(status != ERROR_SUCCESS) return -1;
 
   //добавляем папку в путь
-  //add the folder to the path
   RegPath += sResult;
 
   //открываем заново
-  //open again
   status = regkey.Open(HKEY_LOCAL_MACHINE, RegPath.c_str(), KEY_READ);
   if(status != ERROR_SUCCESS) return -1; 
 
@@ -626,21 +701,43 @@ int CBTDONGLE::CheckDriver(int vid, int pid, long dev_num)
   //Get adapter driver name
   status = regkey.QueryStringValue("Service", buffer, &bufSize); 
   regkey.Close();
-  if(status != ERROR_SUCCESS) return -1; 
-
+  
   //тут имя драйвера
-  //there is a driver name
   std::string txt(buffer); 
   std::transform(txt.begin(), txt.end(), txt.begin(), tolower);
 
-  //проверка совпадения имени драйвера
-  //checking for a driver name match
+  //проверка совпадения драйвера
   int result = (int)txt.find("winusb");
   if(result>=0){return 1;}
 
-  //драйвер не установлен
-  //driver is not installed
+  //не установлен
   return 0;
+
+  /*  
+  //---- Get Vid Pid string
+  ///DeviceInstanceId = "Vid_0403&Pid_6001"; 
+  DeviceInstanceId = msg;
+  length = DeviceInstanceId.GetLength();
+  pos = DeviceInstanceId.Find("Vid_", 0);
+  DeviceInstanceId = DeviceInstanceId.Right(length-pos);
+  length = DeviceInstanceId.GetLength();
+  pos = DeviceInstanceId.Find("\\", 0);
+  */
+
+  /* 
+  if(hKey)
+  {
+    if(win32::registry::read(hKey, L"ProviderName", 
+		                     desc.DriverProviderName, false) != ERROR_SUCCESS)
+    return -1;
+
+    desc.InstalledDriverRegFolder = regFolder;
+
+    std::wstring val;
+    if(win32::registry::read(hKey, L"DriverVersion", val, false) == ERROR_SUCCESS) desc.Version = val;
+        rval = 1;
+  }
+     */
 }
 
 //------------------------------------------------------------------------------
@@ -666,6 +763,109 @@ int CBTDONGLE::Dongle_Open(int index)
   	::AfxMessageBox(_T("WinUSB driver is not installed!"));
   	return -1;
   }
+
+  /*
+  //----
+  //result = libusb_open(usb_device_list[index], &hUSB);
+  hUSB = libusb_open_device_with_vid_pid(ctx, AdaptersVID.at(index), //USB Vendor ID 
+	                                     	  AdaptersPID.at(index));//USB Product ID
+  if(hUSB<=0) return -1;
+  */
+  /* Отсоединить устройство от ядра ОС
+  По умолчанию ядро операционной системы захватывает управление USB устройством.
+  Перед взаимодействием с устройством его необходимо отсоединить от ядра.
+  Отсоединение от ядра выполняется следующим образом:
+  1 Проверка захвата USB устройства ядром ОС
+  Проверка захвата выполняется при помощи функции:
+  int libusb_kernel_driver_active(libusb_device_handle *dev_handle, int interface_number)
+  dev_handle - структура доступа к USB устройству
+  interface_number - номер отсоединяемого интерфейса USB устройства
+  Функция вернет:
+  0 - если устройство не захвачено ядром, 
+  1 - если устройство захвачено ядром и код ошибки в ином случае.
+  //2 Отсоединить устройство от ядра, если оно оказалось захваченным
+  Отсоединение устройства от ядра осуществляется следующей функцией:
+  int libusb_detach_kernel_driver(libusb_device_handle * dev_handle, int interface_number)
+  dev_handle - структура доступа к отсоединяемому USB устройству
+  interface_number - номер отсоединяемого интерфейса USB устройства
+  Функция вернет 0 в случае успешного отсоединения, иначе - код ошибки */
+  
+  /*
+  result = libusb_kernel_driver_active(hUSB, usb_interface); 
+  if(result < 0)
+  {
+	Show_Errors(result);
+
+	//detach if busy
+	result = libusb_detach_kernel_driver(hUSB, usb_interface); 
+	if(result < 0)
+	 {
+	   Show_Errors(result);
+	   AdapterClose();
+	   TRACE("Error open USB dongle\n");
+	   return -1;
+	 }
+  }	*/
+      /*              
+  //Reset dongle to initial state
+  result = libusb_reset_device(hUSB);
+  if(result < 0)
+  {
+	Show_Errors(result);
+	AdapterClose();
+	return -1;
+  }
+
+  //wait while device hardware rebooted
+  Sleep(1000);
+
+  //===================================================================  
+  //GET DESCRIPTOR`s
+  //===================================================================
+  result = libusb_get_descriptor(hUSB, LIBUSB_DT_DEVICE, 0, 
+	                            (unsigned char*)&descr_dev, 
+								 LIBUSB_DT_DEVICE_SIZE);
+
+  if(result < 0)
+   {
+	 Show_Errors(result);
+	 AdapterClose();
+	 return -1;
+   }
+
+  result = libusb_get_descriptor(hUSB, LIBUSB_DT_CONFIG, 0, 
+	                            (unsigned char*)&descr_conf,
+								 LIBUSB_DT_CONFIG_SIZE);
+  if(result < 0)
+   {
+	 Show_Errors(result);
+	 AdapterClose();
+	 return -1;
+   }
+  
+  //===================================================================
+  //SET CONFIGURATION
+  //===================================================================
+  //const int configuration = 1;
+  result = libusb_set_configuration(hUSB, usb_configuration);//1 
+  if(result < 0)
+  {
+	Show_Errors(result);
+	AdapterClose();
+	return -1;
+  }
+
+  //====================================================================
+  //SET INTERFACE  reserve access to device
+  //====================================================================
+  result = libusb_claim_interface(hUSB, usb_interface); //0
+  if(result < 0)
+  {
+	Show_Errors(result);
+	AdapterClose();
+	return -1;
+  }
+  */
 
   result = WUSB.OpenDevice(index);
   if(result<1) return -1; 
@@ -710,6 +910,10 @@ int CBTDONGLE::Dongle_BLEIni(void)
   if(result<0) return -1;
   Sleep(1000);
   
+  //
+  //
+  //
+
   //HCI_Read_Buffer_Size,   HCI Opcode: 0x1005
   result = HCI_CMD(BT_HCI_CMD_READ_BUFFER_SIZE, NULL, 0, buf, -1, 100);
   if(result<0) return -1;
@@ -861,6 +1065,12 @@ int CBTDONGLE::Dongle_BLEIni(void)
 //------------------------------------------------------------------------------
 void CBTDONGLE::FifoCLR(void)
 { 
+  unsigned char buf[256]; int rx_accepted;
+  //выгрести из контроллера все сообщения из канала 
+  //Read answer packet from dongle
+  /*libusb_interrupt_transfer(hUSB, LIBUSB_RECIPIENT_INTERFACE | 
+	                              LIBUSB_ENDPOINT_IN,
+								  buf, 256, &rx_accepted, 1000); */
 }
 
 //------------------------------------------------------------------------------
@@ -928,8 +1138,31 @@ inline void CBTDONGLE::Error(void)
 //Function 
 //------------------------------------------------------------------------------
 void CBTDONGLE::Show_Errors(int error_code)
-{
+{	/*
+	const char *error_name = "";
 
+	switch (error_code) {
+		case LIBUSB_ERROR_TIMEOUT:
+			error_name="Exit by Timeout";
+			break;
+		case LIBUSB_ERROR_NO_DEVICE:
+			error_name="No Device";
+			break;
+		case LIBUSB_ERROR_ACCESS:
+			error_name="Insufficient Permissions";
+			break;
+		case LIBUSB_ERROR_OVERFLOW:
+			break;
+		case LIBUSB_ERROR_PIPE:
+			error_name="Pipe error";
+			break;
+		default:
+			error_name = 0;/// libusb_strerror((libusb_error)error_code);
+			break;
+	}
+
+  TRACE("LibUSB err: %d, %s\n", error_code, error_name);    */
+  //fprintf(stderr,"libUSB Error: %s: %s (%d)\n", error_name, error_hint,);
 }
 
 //------------------------------------------------------------------------------

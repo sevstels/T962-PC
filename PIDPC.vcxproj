@@ -106,7 +106,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\;.\res;.\src\Help;.\src\DFU;.\src\CMD;.\src\Decvice;.\src\Headers;.\src\BT-Dlg;.\src\Application;.\src\DialogPos;.\src\Graph;.\src\PcrFile;.\src\DataTx;.\src\Display;.\src\Version;.\src\Profiles;.\src\WinUSB;.\src\AppSetup;.\src\AnalysisGraph;.\src\Pages;.\src\Pages\Main_Dialog;.\src\Pages\Page1;.\src\Pages\Page2;.\src\Pages\Page2\Functions;.\src\Pages\Page2\DlgPID-test;.\src\Pages\Page3;.\src\Pages\Page3\DlgMonitor;.\src\Pages\Page4;.\src\Pages\Page5;.\src\Pages\Page6;.\src\Pages\Page6\SensorDlg;.\src\Pages\SensorDlg;.\src\Pages\ReflowDlg;.\src\Pages\AboutDialog;.\src\LibCPP\Interpolation;.\src\LibCPP\Files-cpp;.\src\LibCPP\Arrows;.\src\LibCPP\Trace;.\src\LibCPP\ConsoleLog;.\src\LibCPP\WinRegApp;.\src\LibCPP\ToolTip;.\src\LibCPP\HexTxt-Parser;.\src\LibCPP\ColorTxt;.\src\LibCPP\DialogPos;.\src\LibCPP\Images;.\src\LibCPP\LogFile;.\src\LibCPP\SendMsg;.\src\LibCPP\CStaticColor;.\src\LibCPP\LED-Blink;.\src\LibCPP\Integrator;.\src\LibCPP\ProtocolEx;.\src\LibCPP\ParseValue;.\src\LibCPP\CircleBuffer;..\..\..\..\LibCPP\Bluetooth\BT-Dongles;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Parser;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\ble;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\res;.\src\Help;.\src\DFU;.\src\CMD;.\src\Decvice;.\src\Headers;.\src\BT-Dlg;.\src\Application;.\src\DialogPos;.\src\Graph;.\src\PcrFile;.\src\DataTx;.\src\Display;.\src\Version;.\src\Profiles;.\src\WinUSB;.\src\AppSetup;.\src\AnalysisGraph;.\src\Pages;.\src\Pages\Main_Dialog;.\src\Pages\Page1;.\src\Pages\Page2;.\src\Pages\Page2\Functions;.\src\Pages\Page2\DlgPID-test;.\src\Pages\Page3;.\src\Pages\Page3\DlgMonitor;.\src\Pages\Page4;.\src\Pages\Page5;.\src\Pages\Page6;.\src\Pages\Page6\SensorDlg;.\src\Pages\SensorDlg;.\src\Pages\ReflowDlg;.\src\Pages\AboutDialog;.\src\LibCPP\Interpolation;.\src\LibCPP\Files-cpp;.\src\LibCPP\Arrows;.\src\LibCPP\Trace;.\src\LibCPP\ConsoleLog;.\src\LibCPP\WinRegApp;.\src\LibCPP\ToolTip;.\src\LibCPP\HexTxt-Parser;.\src\LibCPP\ColorTxt;.\src\LibCPP\DialogPos;.\src\LibCPP\Images;.\src\LibCPP\LogFile;.\src\LibCPP\SendMsg;.\src\LibCPP\CStaticColor;.\src\LibCPP\LED-Blink;.\src\LibCPP\Integrator;.\src\LibCPP\ProtocolEx;.\src\LibCPP\ParseValue;.\src\LibCPP\CircleBuffer;.\src\LibCPP\BT-Dongles;.\src\LibCPP\BT-Dongles\Parser;.\src\LibCPP\BT-Dongles\Thread;.\src\LibCPP\BT-Dongles\Functions;.\src\LibCPP\BT-Dongles\Firmware;.\src\LibCPP\BT-Dongles\btstack;.\src\LibCPP\BT-Dongles\btstack\src;.\src\LibCPP\BT-Dongles\btstack\ble;.\src\LibCPP\BT-Dongles\btstack\hci</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -125,12 +125,12 @@
       <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>Nafxcwd.lib;Libcmtd.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>.\Debug;</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib;Libcmtd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <CustomBuildStep>
       <Command>
@@ -191,7 +191,7 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>.\;.\res;.\src\Help;.\src\DFU;.\src\CMD;.\src\Decvice;.\src\Headers;.\src\BT-Dlg;.\src\Application;.\src\DialogPos;.\src\Graph;.\src\PcrFile;.\src\DataTx;.\src\Display;.\src\Version;.\src\Profiles;.\src\WinUSB;.\src\AppSetup;.\src\AnalysisGraph;.\src\Pages;.\src\Pages\Main_Dialog;.\src\Pages\Page1;.\src\Pages\Page2;.\src\Pages\Page2\Functions;.\src\Pages\Page2\DlgPID-test;.\src\Pages\Page3;.\src\Pages\Page3\DlgMonitor;.\src\Pages\Page4;.\src\Pages\Page5;.\src\Pages\Page6;.\src\Pages\Page6\SensorDlg;.\src\Pages\SensorDlg;.\src\Pages\ReflowDlg;.\src\Pages\AboutDialog;.\src\LibCPP\Interpolation;.\src\LibCPP\Files-cpp;.\src\LibCPP\Arrows;.\src\LibCPP\Trace;.\src\LibCPP\ConsoleLog;.\src\LibCPP\WinRegApp;.\src\LibCPP\ToolTip;.\src\LibCPP\HexTxt-Parser;.\src\LibCPP\ColorTxt;.\src\LibCPP\DialogPos;.\src\LibCPP\Images;.\src\LibCPP\LogFile;.\src\LibCPP\SendMsg;.\src\LibCPP\CStaticColor;.\src\LibCPP\LED-Blink;.\src\LibCPP\Integrator;.\src\LibCPP\ProtocolEx;.\src\LibCPP\ParseValue;.\src\LibCPP\CircleBuffer;..\..\..\..\LibCPP\Bluetooth\BT-Dongles;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Parser;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\ble;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\res;.\src\Help;.\src\DFU;.\src\CMD;.\src\Decvice;.\src\Headers;.\src\BT-Dlg;.\src\Application;.\src\DialogPos;.\src\Graph;.\src\PcrFile;.\src\DataTx;.\src\Display;.\src\Version;.\src\Profiles;.\src\WinUSB;.\src\AppSetup;.\src\AnalysisGraph;.\src\Pages;.\src\Pages\Main_Dialog;.\src\Pages\Page1;.\src\Pages\Page2;.\src\Pages\Page2\Functions;.\src\Pages\Page2\DlgPID-test;.\src\Pages\Page3;.\src\Pages\Page3\DlgMonitor;.\src\Pages\Page4;.\src\Pages\Page5;.\src\Pages\Page6;.\src\Pages\Page6\SensorDlg;.\src\Pages\SensorDlg;.\src\Pages\ReflowDlg;.\src\Pages\AboutDialog;.\src\LibCPP\Interpolation;.\src\LibCPP\Files-cpp;.\src\LibCPP\Arrows;.\src\LibCPP\Trace;.\src\LibCPP\ConsoleLog;.\src\LibCPP\WinRegApp;.\src\LibCPP\ToolTip;.\src\LibCPP\HexTxt-Parser;.\src\LibCPP\ColorTxt;.\src\LibCPP\DialogPos;.\src\LibCPP\Images;.\src\LibCPP\LogFile;.\src\LibCPP\SendMsg;.\src\LibCPP\CStaticColor;.\src\LibCPP\LED-Blink;.\src\LibCPP\Integrator;.\src\LibCPP\ProtocolEx;.\src\LibCPP\ParseValue;.\src\LibCPP\CircleBuffer;.\src\LibCPP\BT-Dongles;.\src\LibCPP\BT-Dongles\Parser;.\src\LibCPP\BT-Dongles\Thread;.\src\LibCPP\BT-Dongles\Functions;.\src\LibCPP\BT-Dongles\Firmware;.\src\LibCPP\BT-Dongles\btstack;.\src\LibCPP\BT-Dongles\btstack\src;.\src\LibCPP\BT-Dongles\btstack\ble;.\src\LibCPP\BT-Dongles\btstack\hci</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -212,6 +212,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>Nafxcw.lib;Libcmt.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>Nafxcw.lib;Libcmt.lib</IgnoreSpecificDefaultLibraries>
     </Link>
     <PreBuildEvent>
       <Command>$(ProjectDir)\src\Version\revision.exe "$(ProjectDir)\src\Version"</Command>
@@ -250,7 +252,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\bt-dongle.cpp" />
     <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
@@ -279,25 +280,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\bt-firmware.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\hex2hcd.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-adapter.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-ble-ini.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-connect.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-devices.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-send.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-utils.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\hci-cmd.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\sync-le_test.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Parser\parser.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\threads.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\thread_cmd.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\thread_data.cpp" />
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\thread_sync.cpp" />
     <ClCompile Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.cpp" />
     <ClCompile Include="src\AnalysisGraph\anls-dlg-settings.cpp" />
     <ClCompile Include="src\AnalysisGraph\anls-graph.cpp" />
@@ -325,6 +307,20 @@
     <ClCompile Include="src\Graph\graphs.cpp" />
     <ClCompile Include="src\Help\user_help.cpp" />
     <ClCompile Include="src\LibCPP\Arrows\Arrows.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\bt-dongle.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-adapter.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-ble-ini.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-connect.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-devices.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-send.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-utils.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Functions\hci-cmd.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Parser\parser.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Thread\threads.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_cmd.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_data.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_sync.cpp" />
     <ClCompile Include="src\LibCPP\ConsoleLog\log-console.cpp" />
     <ClCompile Include="src\LibCPP\CStaticColor\cstatic-color.cpp" />
     <ClCompile Include="src\LibCPP\DialogPos\dialog-pos.cpp" />
@@ -400,7 +396,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\bt-dongle.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\btstack-config.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_dump.h" />
@@ -419,14 +414,6 @@
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\utils.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\btstack_memory.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\debug.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\BCM20702A0.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\bt-firmware.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\CSR8510A10.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware\RTL8761A.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt-utils.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions\bt.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Parser\parser.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread\threads.h" />
     <ClInclude Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.h" />
     <ClInclude Include="src\AnalysisGraph\anls-dlg-settings.h" />
     <ClInclude Include="src\AnalysisGraph\anls-graph.h" />
@@ -437,6 +424,15 @@
     <ClInclude Include="src\Display\display.h" />
     <ClInclude Include="src\Graph\graphs.h" />
     <ClInclude Include="src\LibCPP\Arrows\Arrows.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\bt-dongle.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\BCM20702A0.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\CSR8510A10.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\RTL8761A.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\Functions\bt-utils.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\Functions\bt.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\Parser\parser.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\Thread\threads.h" />
     <ClInclude Include="src\LibCPP\ConsoleLog\log-console.h" />
     <ClInclude Include="src\LibCPP\CStaticColor\cstatic-color.h" />
     <ClInclude Include="src\LibCPP\DialogPos\dialog-pos.h" />
