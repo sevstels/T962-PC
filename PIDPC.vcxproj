@@ -106,7 +106,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\;.\res;.\src\Help;.\src\DFU;.\src\DSP;.\src\CMD;.\src\Decvice;.\src\Headers;.\src\DigFilters;.\src\BT-Dlg;.\src\Application;.\src\Dialogs;.\src\DialogPos;.\src\Pages;.\src\Pages\Main_Dialog;.\src\Pages\Page1;.\src\Pages\Page2;.\src\Pages\Page2\Functions;.\src\Pages\Page2\DlgPID-test;.\src\Pages\Page3;.\src\Pages\Page3\DlgMonitor;.\src\Pages\Page4;.\src\Pages\Page5;.\src\Pages\Page6;.\src\Pages\Page6\SensorDlg;.\src\PcrFile;.\src\PcrGraph;.\src\PcrDisplay;.\src\PcrProfiles;.\src\AnalysisGraph;.\src\WinUSB;.\src\AppSetup;.\src\DataTx;.\src\Version;.\src\Pages\SensorDlg;.\src\Pages\ReflowDlg;.\src\Pages\AboutDialog;.\src\LibCPP\Interpolation;.\src\LibCPP\Files-cpp;.\src\LibCPP\Arrows;.\src\LibCPP\Trace;.\src\LibCPP\ConsoleLog;.\src\LibCPP\WinRegApp;.\src\LibCPP\ToolTip;.\src\LibCPP\HexTxt-Parser;.\src\LibCPP\ColorTxt;.\src\LibCPP\DialogPos;.\src\LibCPP\Images;.\src\LibCPP\LogFile;.\src\LibCPP\SendMsg;.\src\LibCPP\CStaticColor;.\src\LibCPP\LED-Blink;.\src\LibCPP\Integrator;.\src\LibCPP\ProtocolEx;.\src\LibCPP\ParseValue;.\src\LibCPP\CircleBuffer;..\..\..\..\LibCPP\Bluetooth\BT-Dongles;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Parser;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\ble;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;.\res;.\src\Help;.\src\DFU;.\src\CMD;.\src\Decvice;.\src\Headers;.\src\BT-Dlg;.\src\Application;.\src\DialogPos;.\src\Pages;.\src\Pages\Main_Dialog;.\src\Pages\Page1;.\src\Pages\Page2;.\src\Pages\Page2\Functions;.\src\Pages\Page2\DlgPID-test;.\src\Pages\Page3;.\src\Pages\Page3\DlgMonitor;.\src\Pages\Page4;.\src\Pages\Page5;.\src\Pages\Page6;.\src\Pages\Page6\SensorDlg;.\src\PcrFile;.\src\Graph;.\src\Display;.\src\Profiles;.\src\AnalysisGraph;.\src\WinUSB;.\src\AppSetup;.\src\DataTx;.\src\Version;.\src\Pages\SensorDlg;.\src\Pages\ReflowDlg;.\src\Pages\AboutDialog;.\src\LibCPP\Interpolation;.\src\LibCPP\Files-cpp;.\src\LibCPP\Arrows;.\src\LibCPP\Trace;.\src\LibCPP\ConsoleLog;.\src\LibCPP\WinRegApp;.\src\LibCPP\ToolTip;.\src\LibCPP\HexTxt-Parser;.\src\LibCPP\ColorTxt;.\src\LibCPP\DialogPos;.\src\LibCPP\Images;.\src\LibCPP\LogFile;.\src\LibCPP\SendMsg;.\src\LibCPP\CStaticColor;.\src\LibCPP\LED-Blink;.\src\LibCPP\Integrator;.\src\LibCPP\ProtocolEx;.\src\LibCPP\ParseValue;.\src\LibCPP\CircleBuffer;..\..\..\..\LibCPP\Bluetooth\BT-Dongles;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Parser;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Thread;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Functions;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\Firmware;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\ble;..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -306,6 +306,23 @@
     <ClCompile Include="src\BT-Dlg\bt-dlg.cpp" />
     <ClCompile Include="src\DataTx\datatx.cpp" />
     <ClCompile Include="src\DFU\lpc21isp.cpp" />
+    <ClCompile Include="src\Display\display.cpp" />
+    <ClCompile Include="src\Display\Functions\add-remove.cpp" />
+    <ClCompile Include="src\Display\Functions\backgnd.cpp" />
+    <ClCompile Include="src\Display\Functions\duration.cpp" />
+    <ClCompile Include="src\Display\Functions\led-sample.cpp" />
+    <ClCompile Include="src\Display\Functions\menu.cpp" />
+    <ClCompile Include="src\Display\Functions\mouse_events.cpp" />
+    <ClCompile Include="src\Display\Functions\msgbox.cpp" />
+    <ClCompile Include="src\Display\Functions\primitives.cpp" />
+    <ClCompile Include="src\Display\Functions\profile.cpp" />
+    <ClCompile Include="src\Display\Functions\ramp.cpp" />
+    <ClCompile Include="src\Display\Functions\scales.cpp" />
+    <ClCompile Include="src\Display\Functions\scroll.cpp" />
+    <ClCompile Include="src\Display\Functions\selection.cpp" />
+    <ClCompile Include="src\Display\Functions\square.cpp" />
+    <ClCompile Include="src\Display\Functions\temperature-pcr.cpp" />
+    <ClCompile Include="src\Graph\graphs.cpp" />
     <ClCompile Include="src\Help\user_help.cpp" />
     <ClCompile Include="src\LibCPP\Arrows\Arrows.cpp" />
     <ClCompile Include="src\LibCPP\ConsoleLog\log-console.cpp" />
@@ -372,25 +389,8 @@
     <ClCompile Include="src\Pages\Page6\Thread\thread-dfu.cpp" />
     <ClCompile Include="src\Pages\ReflowDlg\dlg_reflow.cpp" />
     <ClCompile Include="src\Pages\SensorDlg\dlg_sensor.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\add-remove.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\backgnd.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\duration.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\menu.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\mouse_events.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\msgbox.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\primitives.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\ramp.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\profile.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\scales.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\scroll.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\selection.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\led-sample.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\square.cpp" />
-    <ClCompile Include="src\PcrDisplay\Functions\temperature-pcr.cpp" />
-    <ClCompile Include="src\PcrDisplay\display.cpp" />
     <ClCompile Include="src\PcrFile\profile-file-mc.cpp" />
     <ClCompile Include="src\PcrFile\profile-file.cpp" />
-    <ClCompile Include="src\PcrGraph\graphs.cpp" />
     <ClCompile Include="src\TimeStamp\time-stamp.cpp" />
     <ClCompile Include="src\WinUSB\win-usb.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -435,6 +435,8 @@
     <ClInclude Include="src\BT-Dlg\bt-dlg.h" />
     <ClInclude Include="src\DataTx\datatx.h" />
     <ClInclude Include="src\DFU\lpc21isp.h" />
+    <ClInclude Include="src\Display\display.h" />
+    <ClInclude Include="src\Graph\graphs.h" />
     <ClInclude Include="src\LibCPP\Arrows\Arrows.h" />
     <ClInclude Include="src\LibCPP\ConsoleLog\log-console.h" />
     <ClInclude Include="src\LibCPP\CStaticColor\cstatic-color.h" />
@@ -464,9 +466,7 @@
     <ClInclude Include="src\Pages\pages.h" />
     <ClInclude Include="src\Pages\ReflowDlg\dlg_reflow.h" />
     <ClInclude Include="src\Pages\SensorDlg\dlg_sensor.h" />
-    <ClInclude Include="src\PcrDisplay\display.h" />
     <ClInclude Include="src\PcrFile\profile-file.h" />
-    <ClInclude Include="src\PcrGraph\graphs.h" />
     <ClInclude Include="src\TimeStamp\time-stamp.h" />
     <ClInclude Include="src\Version\firmware_build.h" />
     <ClInclude Include="src\WinUSB\win-usb.h" />

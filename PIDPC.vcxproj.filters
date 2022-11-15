@@ -211,14 +211,14 @@
     <Filter Include="BT Dlg">
       <UniqueIdentifier>{85ee0cad-0803-47fd-afdb-6c5ba39599b0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graph">
-      <UniqueIdentifier>{b18a3c61-0fab-4a00-8b00-fda34ab56607}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Graph\Settings Dialog">
-      <UniqueIdentifier>{49546134-fbe3-41b6-9590-d4ccb7b8a194}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LibCPP\ProtocolEx">
       <UniqueIdentifier>{60403952-48df-4686-b6e8-c1563a7022d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Analysys">
+      <UniqueIdentifier>{b18a3c61-0fab-4a00-8b00-fda34ab56607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Analysys\Settings Dialog">
+      <UniqueIdentifier>{49546134-fbe3-41b6-9590-d4ccb7b8a194}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -246,39 +246,6 @@
     <ClCompile Include="src\Pages\Main_Dialog\Thread\ThreadMain.cpp">
       <Filter>Pages\Main Dialog\Thread</Filter>
     </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\backgnd.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\scales.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\square.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\mouse_events.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\profile.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\duration.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\selection.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\ramp.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\add-remove.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\menu.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\primitives.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
     <ClCompile Include="src\Pages\Page2\Functions\controls2.cpp">
       <Filter>Pages\Page 2\Functions</Filter>
     </ClCompile>
@@ -286,16 +253,10 @@
       <Filter>Help</Filter>
     </ClCompile>
     <ClCompile Include="src\AnalysisGraph\anls-graph.cpp">
-      <Filter>Graph</Filter>
+      <Filter>Analysys</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.cpp">
       <Filter>LibCPP\Color Txt</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\scroll.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\msgbox.cpp">
-      <Filter>Display\Functions</Filter>
     </ClCompile>
     <ClCompile Include="src\TimeStamp\time-stamp.cpp">
       <Filter>Time Stamp</Filter>
@@ -303,20 +264,11 @@
     <ClCompile Include="src\Pages\Page2\Functions\pid-tune.cpp">
       <Filter>Pages\Page 2\Functions</Filter>
     </ClCompile>
-    <ClCompile Include="src\PcrGraph\graphs.cpp">
-      <Filter>Graphs</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\temperature-pcr.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
     <ClCompile Include="src\Pages\Page2\DlgPID-test\dlg_pid-test.cpp">
       <Filter>Pages\Page 2\Dialog PID-Test</Filter>
     </ClCompile>
-    <ClCompile Include="src\PcrDisplay\Functions\led-sample.cpp">
-      <Filter>Display\Functions</Filter>
-    </ClCompile>
     <ClCompile Include="src\AnalysisGraph\anls-dlg-settings.cpp">
-      <Filter>Graph\Settings Dialog</Filter>
+      <Filter>Analysys\Settings Dialog</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\bt-dongle.cpp">
       <Filter>LibCPP\BT-Dongles</Filter>
@@ -489,9 +441,6 @@
     <ClCompile Include="src\BT-Dlg\bt-dlg.cpp">
       <Filter>BT Dlg</Filter>
     </ClCompile>
-    <ClCompile Include="src\PcrDisplay\display.cpp">
-      <Filter>Display</Filter>
-    </ClCompile>
     <ClCompile Include="src\LibCPP\WinRegApp\AppWinReg.cpp">
       <Filter>LibCPP\WinReg</Filter>
     </ClCompile>
@@ -561,6 +510,57 @@
     <ClCompile Include="src\LibCPP\Interpolation\bezier.cpp">
       <Filter>LibCPP\Bezier Interpolation</Filter>
     </ClCompile>
+    <ClCompile Include="src\Display\Functions\add-remove.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\backgnd.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\duration.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\led-sample.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\menu.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\mouse_events.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\msgbox.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\primitives.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\profile.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\ramp.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\scales.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\scroll.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\selection.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\square.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\Functions\temperature-pcr.cpp">
+      <Filter>Display\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Display\display.cpp">
+      <Filter>Display</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graph\graphs.cpp">
+      <Filter>Graphs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -597,7 +597,7 @@
       <Filter>Help</Filter>
     </ClInclude>
     <ClInclude Include="src\AnalysisGraph\anls-graph.h">
-      <Filter>Graph</Filter>
+      <Filter>Analysys</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.h">
       <Filter>LibCPP\Color Txt</Filter>
@@ -605,14 +605,11 @@
     <ClInclude Include="src\TimeStamp\time-stamp.h">
       <Filter>Time Stamp</Filter>
     </ClInclude>
-    <ClInclude Include="src\PcrGraph\graphs.h">
-      <Filter>Graphs</Filter>
-    </ClInclude>
     <ClInclude Include="src\Pages\Page2\DlgPID-test\dlg_pid-test.h">
       <Filter>Pages\Page 2\Dialog PID-Test</Filter>
     </ClInclude>
     <ClInclude Include="src\AnalysisGraph\anls-dlg-settings.h">
-      <Filter>Graph\Settings Dialog</Filter>
+      <Filter>Analysys\Settings Dialog</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\bt-dongle.h">
       <Filter>LibCPP\BT-Dongles</Filter>
@@ -746,9 +743,6 @@
     <ClInclude Include="src\BT-Dlg\bt-dlg.h">
       <Filter>BT Dlg</Filter>
     </ClInclude>
-    <ClInclude Include="src\PcrDisplay\display.h">
-      <Filter>Display</Filter>
-    </ClInclude>
     <ClInclude Include="src\LibCPP\WinRegApp\AppWinReg.h">
       <Filter>LibCPP\WinReg</Filter>
     </ClInclude>
@@ -793,6 +787,12 @@
     </ClInclude>
     <ClInclude Include="src\LibCPP\Interpolation\interpolation.h">
       <Filter>LibCPP\Bezier Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Display\display.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graph\graphs.h">
+      <Filter>Graphs</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
