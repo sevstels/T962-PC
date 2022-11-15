@@ -252,9 +252,6 @@
     <ClCompile Include="src\AnalysisGraph\anls-graph.cpp">
       <Filter>Analysys</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.cpp">
-      <Filter>LibCPP\Color Txt</Filter>
-    </ClCompile>
     <ClCompile Include="src\Pages\Page2\Functions\pid-tune.cpp">
       <Filter>Pages\Page 2\Functions</Filter>
     </ClCompile>
@@ -549,6 +546,9 @@
     <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\utils.c">
       <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
     </ClCompile>
+    <ClCompile Include="src\LibCPP\ColorTxt\ColorStaticST.cpp">
+      <Filter>LibCPP\Color Txt</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -586,9 +586,6 @@
     </ClInclude>
     <ClInclude Include="src\AnalysisGraph\anls-graph.h">
       <Filter>Analysys</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.h">
-      <Filter>LibCPP\Color Txt</Filter>
     </ClInclude>
     <ClInclude Include="src\Pages\Page2\DlgPID-test\dlg_pid-test.h">
       <Filter>Pages\Page 2\Dialog PID-Test</Filter>
@@ -775,6 +772,9 @@
     </ClInclude>
     <ClInclude Include="src\LibCPP\BT-Dongles\btstack\src\btstack_memory.h">
       <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\ColorTxt\ColorStaticST.h">
+      <Filter>LibCPP\Color Txt</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

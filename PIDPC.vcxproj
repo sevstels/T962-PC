@@ -252,7 +252,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.cpp" />
     <ClCompile Include="src\AnalysisGraph\anls-dlg-settings.cpp" />
     <ClCompile Include="src\AnalysisGraph\anls-graph.cpp" />
     <ClCompile Include="src\Application\PIDPC.cpp" />
@@ -317,6 +316,7 @@
     <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_cmd.cpp" />
     <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_data.cpp" />
     <ClCompile Include="src\LibCPP\BT-Dongles\Thread\thread_sync.cpp" />
+    <ClCompile Include="src\LibCPP\ColorTxt\ColorStaticST.cpp" />
     <ClCompile Include="src\LibCPP\ConsoleLog\log-console.cpp" />
     <ClCompile Include="src\LibCPP\CStaticColor\cstatic-color.cpp" />
     <ClCompile Include="src\LibCPP\DialogPos\dialog-pos.cpp" />
@@ -405,7 +405,6 @@
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\run_loop.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\sdp_util.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\utils.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.h" />
     <ClInclude Include="src\AnalysisGraph\anls-dlg-settings.h" />
     <ClInclude Include="src\AnalysisGraph\anls-graph.h" />
     <ClInclude Include="src\AppSetup\app-setup.h" />
@@ -428,6 +427,7 @@
     <ClInclude Include="src\LibCPP\BT-Dongles\Functions\bt.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\Parser\parser.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\Thread\threads.h" />
+    <ClInclude Include="src\LibCPP\ColorTxt\ColorStaticST.h" />
     <ClInclude Include="src\LibCPP\ConsoleLog\log-console.h" />
     <ClInclude Include="src\LibCPP\CStaticColor\cstatic-color.h" />
     <ClInclude Include="src\LibCPP\DialogPos\dialog-pos.h" />
