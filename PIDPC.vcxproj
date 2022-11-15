@@ -252,18 +252,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_cmds.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_dump.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\btstack_memory.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
@@ -308,6 +296,18 @@
     <ClCompile Include="src\Help\user_help.cpp" />
     <ClCompile Include="src\LibCPP\Arrows\Arrows.cpp" />
     <ClCompile Include="src\LibCPP\BT-Dongles\bt-dongle.cpp" />
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\hci\hci.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\hci\hci_cmds.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\hci\hci_dump.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.cpp" />
     <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-adapter.cpp" />
     <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-ble-ini.cpp" />
@@ -397,9 +397,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\btstack-config.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_dump.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_transport.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\ant_cmds.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\btstack.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\hal_cpu.h" />
@@ -425,6 +422,9 @@
     <ClInclude Include="src\Graph\graphs.h" />
     <ClInclude Include="src\LibCPP\Arrows\Arrows.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\bt-dongle.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci_dump.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci_transport.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\BCM20702A0.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\CSR8510A10.h" />

@@ -276,15 +276,6 @@
     <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\utils.c">
       <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci.c">
-      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_cmds.c">
-      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_dump.c">
-      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
-    </ClCompile>
     <ClCompile Include="src\WinUSB\win-usb.cpp">
       <Filter>WinUSB</Filter>
     </ClCompile>
@@ -549,6 +540,15 @@
     <ClCompile Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.cpp">
       <Filter>LibCPP\BT-Dongles\Firmware</Filter>
     </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\hci\hci.c">
+      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\hci\hci_cmds.c">
+      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\hci\hci_dump.c">
+      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -640,15 +640,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\btstack-config.h">
       <Filter>LibCPP\BT-Dongles\BT Stack</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci.h">
-      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_dump.h">
-      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\hci\hci_transport.h">
-      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
     </ClInclude>
     <ClInclude Include="src\WinUSB\winusb.h">
       <Filter>WinUSB</Filter>
@@ -778,6 +769,15 @@
     </ClInclude>
     <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\RTL8761A.h">
       <Filter>LibCPP\BT-Dongles\Firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci.h">
+      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci_dump.h">
+      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci_transport.h">
+      <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
