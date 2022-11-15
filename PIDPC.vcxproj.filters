@@ -264,18 +264,6 @@
     <ClCompile Include="src\AnalysisGraph\anls-dlg-settings.cpp">
       <Filter>Analysys\Settings Dialog</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\btstack_memory.c">
-      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\linked_list.c">
-      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\memory_pool.c">
-      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\utils.c">
-      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
-    </ClCompile>
     <ClCompile Include="src\WinUSB\win-usb.cpp">
       <Filter>WinUSB</Filter>
     </ClCompile>
@@ -549,6 +537,18 @@
     <ClCompile Include="src\LibCPP\BT-Dongles\btstack\hci\hci_dump.c">
       <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
     </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\btstack_memory.c">
+      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\linked_list.c">
+      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\memory_pool.c">
+      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\utils.c">
+      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -631,12 +631,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\utils.h">
       <Filter>LibCPP\BT-Dongles\BT Stack\includes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\btstack_memory.h">
-      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\debug.h">
-      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\btstack-config.h">
       <Filter>LibCPP\BT-Dongles\BT Stack</Filter>
@@ -778,6 +772,9 @@
     </ClInclude>
     <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci_transport.h">
       <Filter>LibCPP\BT-Dongles\BT Stack\hci</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibCPP\BT-Dongles\btstack\src\btstack_memory.h">
+      <Filter>LibCPP\BT-Dongles\BT Stack\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

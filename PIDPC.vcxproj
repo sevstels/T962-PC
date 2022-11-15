@@ -252,22 +252,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\btstack_memory.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\linked_list.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\memory_pool.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\utils.c">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.cpp" />
     <ClCompile Include="src\AnalysisGraph\anls-dlg-settings.cpp" />
     <ClCompile Include="src\AnalysisGraph\anls-graph.cpp" />
@@ -307,6 +291,18 @@
     <ClCompile Include="src\LibCPP\BT-Dongles\btstack\hci\hci_dump.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\btstack_memory.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\linked_list.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\memory_pool.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\LibCPP\BT-Dongles\btstack\src\utils.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.cpp" />
     <ClCompile Include="src\LibCPP\BT-Dongles\Functions\bt-adapter.cpp" />
@@ -409,8 +405,6 @@
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\run_loop.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\sdp_util.h" />
     <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\include\utils.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\btstack_memory.h" />
-    <ClInclude Include="..\..\..\..\LibCPP\Bluetooth\BT-Dongles\btstack\src\debug.h" />
     <ClInclude Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.h" />
     <ClInclude Include="src\AnalysisGraph\anls-dlg-settings.h" />
     <ClInclude Include="src\AnalysisGraph\anls-graph.h" />
@@ -425,6 +419,7 @@
     <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci_dump.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\btstack\hci\hci_transport.h" />
+    <ClInclude Include="src\LibCPP\BT-Dongles\btstack\src\btstack_memory.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\BCM20702A0.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\bt-firmware.h" />
     <ClInclude Include="src\LibCPP\BT-Dongles\Firmware\CSR8510A10.h" />
