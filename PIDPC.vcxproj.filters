@@ -73,9 +73,6 @@
     <Filter Include="LibCPP\Color Txt">
       <UniqueIdentifier>{686c78af-74b5-4e74-beac-866f85550adb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Time Stamp">
-      <UniqueIdentifier>{a94a7fb2-8c15-4afe-ae71-3748c4e3053e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="LibCPP\Console Log">
       <UniqueIdentifier>{9afba763-b333-4c21-ba8b-66c91a36c7df}</UniqueIdentifier>
     </Filter>
@@ -148,9 +145,6 @@
     <Filter Include="Pages\Sensor Dlg">
       <UniqueIdentifier>{8c3173f3-82f6-48f2-8c3d-6cec4c9f5d57}</UniqueIdentifier>
     </Filter>
-    <Filter Include="T-Profile Files">
-      <UniqueIdentifier>{f140e704-6246-4c19-9c37-fdf9b31c958b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Pages\Page 3">
       <UniqueIdentifier>{d3828748-f8ca-4686-99f6-676c25f9fc20}</UniqueIdentifier>
     </Filter>
@@ -220,6 +214,9 @@
     <Filter Include="Analysys\Settings Dialog">
       <UniqueIdentifier>{49546134-fbe3-41b6-9590-d4ccb7b8a194}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Profile Files">
+      <UniqueIdentifier>{f140e704-6246-4c19-9c37-fdf9b31c958b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -257,9 +254,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.cpp">
       <Filter>LibCPP\Color Txt</Filter>
-    </ClCompile>
-    <ClCompile Include="src\TimeStamp\time-stamp.cpp">
-      <Filter>Time Stamp</Filter>
     </ClCompile>
     <ClCompile Include="src\Pages\Page2\Functions\pid-tune.cpp">
       <Filter>Pages\Page 2\Functions</Filter>
@@ -350,12 +344,6 @@
     </ClCompile>
     <ClCompile Include="src\Pages\SensorDlg\dlg_sensor.cpp">
       <Filter>Pages\Sensor Dlg</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrFile\profile-file.cpp">
-      <Filter>T-Profile Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PcrFile\profile-file-mc.cpp">
-      <Filter>T-Profile Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Pages\Page3\Page3.cpp">
       <Filter>Pages\Page 3</Filter>
@@ -561,6 +549,12 @@
     <ClCompile Include="src\Graph\graphs.cpp">
       <Filter>Graphs</Filter>
     </ClCompile>
+    <ClCompile Include="src\Profiles\profile-file.cpp">
+      <Filter>Profile Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Profiles\profile-file-mc.cpp">
+      <Filter>Profile Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -601,9 +595,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\LibCPP\ColorTxt\ColorStaticST.h">
       <Filter>LibCPP\Color Txt</Filter>
-    </ClInclude>
-    <ClInclude Include="src\TimeStamp\time-stamp.h">
-      <Filter>Time Stamp</Filter>
     </ClInclude>
     <ClInclude Include="src\Pages\Page2\DlgPID-test\dlg_pid-test.h">
       <Filter>Pages\Page 2\Dialog PID-Test</Filter>
@@ -701,9 +692,6 @@
     <ClInclude Include="src\Pages\SensorDlg\dlg_sensor.h">
       <Filter>Pages\Sensor Dlg</Filter>
     </ClInclude>
-    <ClInclude Include="src\PcrFile\profile-file.h">
-      <Filter>T-Profile Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Pages\Page3\Page3.h">
       <Filter>Pages\Page 3</Filter>
     </ClInclude>
@@ -793,6 +781,9 @@
     </ClInclude>
     <ClInclude Include="src\Graph\graphs.h">
       <Filter>Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Profiles\profile-file.h">
+      <Filter>Profile Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
